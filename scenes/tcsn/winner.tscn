@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://b6ilukhr81a24"]
+
+[ext_resource type="PackedScene" uid="uid://b41i36u7wnmb8" path="res://scenes/tcsn/background.tscn" id="1_jsjr3"]
+[ext_resource type="Shader" path="res://scenes/shaders/wavetext.gdshader" id="2_5ci16"]
+[ext_resource type="LabelSettings" uid="uid://dd1o01iuf0xj5" path="res://scenes/font_settings/label_2.tres" id="3_10vgk"]
+[ext_resource type="PackedScene" uid="uid://blbwx1inb1rui" path="res://scenes/tcsn/qr_code.tscn" id="4_ggipo"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fa740"]
+shader = ExtResource("2_5ci16")
+shader_parameter/height = 10.0
+shader_parameter/frequency = 5.0
+shader_parameter/speed = 5.0
+
+[node name="winner" type="Node2D"]
+
+[node name="background" parent="." instance=ExtResource("1_jsjr3")]
+position = Vector2(-23, -22)
+
+[node name="Label" type="Label" parent="."]
+material = SubResource("ShaderMaterial_fa740")
+offset_left = 6.0
+offset_top = 167.0
+offset_right = 1075.0
+offset_bottom = 418.0
+size_flags_horizontal = 4
+size_flags_vertical = 1
+text = "Winnner"
+label_settings = ExtResource("3_10vgk")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="QRView" parent="." instance=ExtResource("4_ggipo")]
+offset_left = 296.0
+offset_top = 984.0
+offset_right = 296.0
+offset_bottom = 984.0

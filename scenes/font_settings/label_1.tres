@@ -1,0 +1,7 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://cmrqtgl8q0d6m"]
+
+[ext_resource type="FontFile" uid="uid://2gm83ci1c064" path="res://sprites/fonts/pixelFont-7-8x14-sproutLands.ttf" id="1_hebao"]
+
+[resource]
+font = ExtResource("1_hebao")
+font_size = 61

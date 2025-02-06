@@ -9,6 +9,13 @@ script = ExtResource("1_m8c73")
 text_label = NodePath("Text")
 qr_code_image = NodePath("QRCode")
 
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 56.0
+offset_right = 502.0
+offset_bottom = 556.0
+
 [node name="Text" type="Label" parent="."]
 layout_mode = 2
 offset_left = 1.0
