@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b41i36u7wnmb8"]
+
+[ext_resource type="Texture2D" uid="uid://djiy52biympwj" path="res://sprites/bootsplash.png" id="1_bxsof"]
+
+[node name="background" type="Node2D"]
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(576, 906.313)
+scale = Vector2(1.14329, 2.2309)
+texture = ExtResource("1_bxsof")

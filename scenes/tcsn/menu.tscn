@@ -1,0 +1,100 @@
+[gd_scene load_steps=15 format=3 uid="uid://rmwqxvbngjwq"]
+
+[ext_resource type="FontFile" uid="uid://2gm83ci1c064" path="res://sprites/fonts/pixelFont-7-8x14-sproutLands.ttf" id="1_aujm4"]
+[ext_resource type="Script" path="res://scenes/scripts/start.gd" id="1_ffh8t"]
+[ext_resource type="Texture2D" uid="uid://bcb1308m705nx" path="res://sprites/UI Big Play Button.png" id="2_pfqfb"]
+[ext_resource type="Shader" path="res://scenes/shaders/background.gdshader" id="2_vln7t"]
+[ext_resource type="PackedScene" uid="uid://b41i36u7wnmb8" path="res://scenes/tcsn/background.tscn" id="3_ce1kg"]
+[ext_resource type="Shader" path="res://scenes/shaders/wavetext.gdshader" id="5_2foi7"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jcb36"]
+shader = ExtResource("2_vln7t")
+shader_parameter/height = 10.0
+shader_parameter/frequency = 5.0
+shader_parameter/speed = 5.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0r7oh"]
+shader = ExtResource("5_2foi7")
+shader_parameter/height = 5.0
+shader_parameter/frequency = 10.0
+shader_parameter/speed = 5.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_3heo2"]
+font = ExtResource("1_aujm4")
+font_size = 61
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3o2n7"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_n65ea"]
+texture = ExtResource("2_pfqfb")
+region_rect = Rect2(3, 2, 90, 27)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_profp"]
+texture = ExtResource("2_pfqfb")
+region_rect = Rect2(3, 2, 90, 27)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7u3go"]
+texture = ExtResource("2_pfqfb")
+region_rect = Rect2(99, 4, 90, 25)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5jsmf"]
+texture = ExtResource("2_pfqfb")
+region_rect = Rect2(3, 2, 90, 27)
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -556.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="background" parent="." instance=ExtResource("3_ce1kg")]
+material = SubResource("ShaderMaterial_jcb36")
+
+[node name="Label" type="Label" parent="."]
+material = SubResource("ShaderMaterial_0r7oh")
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 832.0
+offset_bottom = 946.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "Lucky Voucher
+"
+label_settings = SubResource("LabelSettings_3heo2")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
+
+[node name="Start" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -126.0
+offset_top = 254.0
+offset_right = 124.0
+offset_bottom = 324.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.982187, 0.444732, 0, 1)
+theme_override_fonts/font = ExtResource("1_aujm4")
+theme_override_font_sizes/font_size = 48
+theme_override_styles/focus = SubResource("StyleBoxEmpty_3o2n7")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_n65ea")
+theme_override_styles/hover = SubResource("StyleBoxTexture_profp")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_7u3go")
+theme_override_styles/normal = SubResource("StyleBoxTexture_5jsmf")
+action_mode = 0
+text = "Start
+"
+script = ExtResource("1_ffh8t")
+
+[connection signal="pressed" from="Start" to="Start" method="_on_pressed"]

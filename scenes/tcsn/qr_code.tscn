@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://blbwx1inb1rui"]
+
+[ext_resource type="Script" path="res://scenes/scripts/QRCODE/qr_view.gd" id="1_m8c73"]
+
+[node name="QRView" type="Control" node_paths=PackedStringArray("text_label", "qr_code_image")]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_m8c73")
+text_label = NodePath("Text")
+qr_code_image = NodePath("QRCode")
+
+[node name="Text" type="Label" parent="."]
+layout_mode = 2
+offset_left = 1.0
+offset_right = 190.0
+offset_bottom = 23.0
+
+[node name="QRCode" type="TextureRect" parent="."]
+layout_mode = 2
+offset_left = 2.0
+offset_top = 56.0
+offset_right = 502.0
+offset_bottom = 556.0

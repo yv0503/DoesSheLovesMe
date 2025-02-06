@@ -1,0 +1,429 @@
+[gd_scene load_steps=43 format=3 uid="uid://bal75n0hj545r"]
+
+[ext_resource type="Shader" path="res://scenes/shaders/background.gdshader" id="1_q6oga"]
+[ext_resource type="Texture2D" uid="uid://c4o0gfjg5va1r" path="res://sprites/flower/flower_pistils.png" id="1_qtjug"]
+[ext_resource type="Script" path="res://scenes/scripts/petal_1.gd" id="1_xtnhd"]
+[ext_resource type="Texture2D" uid="uid://cejkx4cdqqtk6" path="res://sprites/flower/flower_petal_pull_animation1.png" id="2_fvgp3"]
+[ext_resource type="Texture2D" uid="uid://15vppuvf5i1b" path="res://sprites/flower/flower_petal_pull_animation2.png" id="3_imlqi"]
+[ext_resource type="Texture2D" uid="uid://dcbhjbvbdjdo" path="res://sprites/flower/flower_petal_pull_animation3.png" id="4_rer7b"]
+[ext_resource type="Texture2D" uid="uid://ci8cm0kcquti3" path="res://sprites/flower/flower_petal_pull_animation4.png" id="5_2upe2"]
+[ext_resource type="Texture2D" uid="uid://cpulxm5di7dku" path="res://sprites/flower/flower_petal_pull_animation5.png" id="6_wsydq"]
+[ext_resource type="Texture2D" uid="uid://dix20fy33lwx1" path="res://sprites/flower/flower_petal_pull_animation6.png" id="7_qtyfv"]
+[ext_resource type="Texture2D" uid="uid://cpyf853ujy812" path="res://sprites/flower/flower_petal_pull_animation7.png" id="8_git47"]
+[ext_resource type="Texture2D" uid="uid://brdx74spwrnqq" path="res://sprites/flower/flower_petal_pull_animation8.png" id="9_brwrj"]
+[ext_resource type="Texture2D" uid="uid://o4h23opf1an3" path="res://sprites/flower/flower_petal_pull_animation9.png" id="10_cj2g3"]
+[ext_resource type="Texture2D" uid="uid://bsvfvbdyy5uni" path="res://sprites/flower/flower_petal_pull_animation10.png" id="11_lw5ke"]
+[ext_resource type="Texture2D" uid="uid://ddiwrie4a4x3i" path="res://sprites/flower/flower_petal_pull_animation11.png" id="12_v0jn7"]
+[ext_resource type="Texture2D" uid="uid://cwnnehjh5no6s" path="res://sprites/flower/flower_petal_pull_animation12.png" id="13_bw58a"]
+[ext_resource type="Texture2D" uid="uid://bqxpm5nod5pne" path="res://sprites/flower/flower_petal_pull_animation13.png" id="14_lidfc"]
+[ext_resource type="Texture2D" uid="uid://d03686xexqmpi" path="res://sprites/flower/flower_petal_pull_animation14.png" id="15_wb6fw"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hx4kc"]
+shader = ExtResource("1_q6oga")
+shader_parameter/height = 15.0
+shader_parameter/frequency = 50.0
+shader_parameter/speed = 4.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xdja5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_fvgp3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_imlqi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_rer7b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_2upe2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_wsydq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_qtyfv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_git47")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_brwrj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_cj2g3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_lw5ke")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_v0jn7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_bw58a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_lidfc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_wb6fw")
+}],
+"loop": false,
+"name": &"petal_pull",
+"speed": 20.0
+}]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1mi5c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_51qjp"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bj51n"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_yprmi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ufd16"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_01fys"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t1ctq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_34cdf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rqgoy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nkd02"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cddha"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_assna"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hygwo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mlydx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h6rqx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lr6mt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jm755"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jfayn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fpcwk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_43f8c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rv6f4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mfirv"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_mg056"]
+shader = ExtResource("1_q6oga")
+shader_parameter/height = 10.0
+shader_parameter/frequency = 5.0
+shader_parameter/speed = 5.0
+
+[node name="flower" type="Node2D"]
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="petal1" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_hx4kc")
+position = Vector2(-168, 199)
+scale = Vector2(0.199594, 0.201548)
+sprite_frames = SubResource("SpriteFrames_xdja5")
+animation = &"petal_pull"
+
+[node name="petal2" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_hx4kc")
+position = Vector2(43, 275)
+rotation = -0.832522
+scale = Vector2(0.210574, 0.215998)
+sprite_frames = SubResource("SpriteFrames_xdja5")
+animation = &"petal_pull"
+
+[node name="petal3" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_hx4kc")
+position = Vector2(201, 196)
+rotation = -1.48004
+scale = Vector2(0.210574, 0.215998)
+sprite_frames = SubResource("SpriteFrames_xdja5")
+animation = &"petal_pull"
+
+[node name="petal4" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_hx4kc")
+position = Vector2(289.291, 16.075)
+rotation = -2.22355
+scale = Vector2(0.229463, 0.229559)
+skew = 0.0045917
+sprite_frames = SubResource("SpriteFrames_xdja5")
+animation = &"petal_pull"
+
+[node name="petal5" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_hx4kc")
+position = Vector2(194, -196)
+rotation = -3.05433
+scale = Vector2(0.211498, 0.211586)
+skew = 0.0045917
+sprite_frames = SubResource("SpriteFrames_xdja5")
+animation = &"petal_pull"
+
+[node name="petal6" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_hx4kc")
+position = Vector2(-3.00002, -272)
+rotation = -3.84507
+scale = Vector2(0.211498, 0.211586)
+skew = 0.0045917
+sprite_frames = SubResource("SpriteFrames_xdja5")
+animation = &"petal_pull"
+
+[node name="petal7" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_hx4kc")
+position = Vector2(-211, -171)
+rotation = -4.73489
+scale = Vector2(0.211498, 0.211586)
+skew = 0.0045917
+sprite_frames = SubResource("SpriteFrames_xdja5")
+animation = &"petal_pull"
+
+[node name="petal8" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_hx4kc")
+position = Vector2(-267, 75)
+rotation = -5.67307
+scale = Vector2(0.211498, 0.211586)
+skew = 0.0045917
+sprite_frames = SubResource("SpriteFrames_xdja5")
+animation = &"petal_pull"
+
+[node name="petalbutton1" type="Button" parent="." node_paths=PackedStringArray("petal")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -76.0
+offset_top = 7.0
+offset_right = 24.0001
+offset_bottom = 157.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1mi5c")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_51qjp")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_bj51n")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_yprmi")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_ufd16")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_01fys")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_t1ctq")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_34cdf")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_rqgoy")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_nkd02")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_cddha")
+script = ExtResource("1_xtnhd")
+petal = NodePath("../petal1")
+metadata/_edit_use_anchors_ = true
+
+[node name="petalbutton2" type="Button" parent="." node_paths=PackedStringArray("petal")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -29.0
+offset_top = 37.0
+offset_right = 71.0001
+offset_bottom = 187.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -0.506145
+theme_override_styles/focus = SubResource("StyleBoxEmpty_assna")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_hygwo")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_mlydx")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_h6rqx")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_lr6mt")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_jm755")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_jfayn")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_fpcwk")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_43f8c")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_rv6f4")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_mfirv")
+script = ExtResource("1_xtnhd")
+petal = NodePath("../petal2")
+metadata/_edit_use_anchors_ = true
+
+[node name="petalbutton3" type="Button" parent="." node_paths=PackedStringArray("petal")]
+anchors_preset = -1
+anchor_left = 0.51
+anchor_top = -0.186667
+anchor_right = 0.52
+anchor_bottom = -0.06
+offset_left = 13.0
+offset_top = 83.0
+offset_right = 113.0
+offset_bottom = 233.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -1.48004
+theme_override_styles/focus = SubResource("StyleBoxEmpty_assna")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_hygwo")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_mlydx")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_h6rqx")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_lr6mt")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_jm755")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_jfayn")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_fpcwk")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_43f8c")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_rv6f4")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_mfirv")
+script = ExtResource("1_xtnhd")
+petal = NodePath("../petal3")
+metadata/_edit_use_anchors_ = true
+
+[node name="petalbutton4" type="Button" parent="." node_paths=PackedStringArray("petal")]
+anchors_preset = -1
+anchor_left = 0.51
+anchor_top = -0.186667
+anchor_right = 0.52
+anchor_bottom = -0.06
+offset_left = 120.0
+offset_top = -287.0
+offset_right = 220.0
+offset_bottom = -137.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -1.60327
+scale = Vector2(1.1423, 0.889808)
+pivot_offset = Vector2(85.8031, 208.017)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_assna")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_hygwo")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_mlydx")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_h6rqx")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_lr6mt")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_jm755")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_jfayn")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_fpcwk")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_43f8c")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_rv6f4")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_mfirv")
+script = ExtResource("1_xtnhd")
+petal = NodePath("../petal4")
+metadata/_edit_use_anchors_ = true
+
+[node name="petalbutton5" type="Button" parent="." node_paths=PackedStringArray("petal")]
+anchors_preset = -1
+anchor_left = 0.51
+anchor_top = -0.186667
+anchor_right = 0.51
+offset_left = 26.0
+offset_top = -175.0
+offset_right = 126.0
+offset_bottom = -25.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.450758
+theme_override_styles/focus = SubResource("StyleBoxEmpty_assna")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_hygwo")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_mlydx")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_h6rqx")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_lr6mt")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_jm755")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_jfayn")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_fpcwk")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_43f8c")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_rv6f4")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_mfirv")
+script = ExtResource("1_xtnhd")
+petal = NodePath("../petal5")
+metadata/_edit_use_anchors_ = true
+
+[node name="petalbutton6" type="Button" parent="." node_paths=PackedStringArray("petal")]
+anchors_preset = -1
+anchor_left = 0.51
+anchor_top = -0.186667
+anchor_right = 0.51
+offset_left = 47.0
+offset_top = -48.0
+offset_right = 147.0
+offset_bottom = 102.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 2.58067
+theme_override_styles/focus = SubResource("StyleBoxEmpty_assna")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_hygwo")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_mlydx")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_h6rqx")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_lr6mt")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_jm755")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_jfayn")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_fpcwk")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_43f8c")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_rv6f4")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_mfirv")
+script = ExtResource("1_xtnhd")
+petal = NodePath("../petal6")
+metadata/_edit_use_anchors_ = true
+
+[node name="petalbutton7" type="Button" parent="." node_paths=PackedStringArray("petal")]
+anchors_preset = -1
+anchor_left = 0.51
+anchor_top = -0.186667
+anchor_right = 0.51
+offset_left = -176.0
+offset_top = -16.0
+offset_right = -76.0
+offset_bottom = 134.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -1.163
+theme_override_styles/focus = SubResource("StyleBoxEmpty_assna")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_hygwo")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_mlydx")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_h6rqx")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_lr6mt")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_jm755")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_jfayn")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_fpcwk")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_43f8c")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_rv6f4")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_mfirv")
+script = ExtResource("1_xtnhd")
+petal = NodePath("../petal7")
+metadata/_edit_use_anchors_ = true
+
+[node name="petalbutton8" type="Button" parent="." node_paths=PackedStringArray("petal")]
+anchors_preset = -1
+anchor_left = 0.51
+anchor_top = -0.186667
+anchor_right = 0.51
+offset_left = -55.0
+offset_top = -23.0
+offset_right = 45.0
+offset_bottom = 127.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 0.882653
+theme_override_styles/focus = SubResource("StyleBoxEmpty_assna")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_hygwo")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_mlydx")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_h6rqx")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_lr6mt")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_jm755")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_jfayn")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_fpcwk")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_43f8c")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_rv6f4")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_mfirv")
+script = ExtResource("1_xtnhd")
+petal = NodePath("../petal8")
+metadata/_edit_use_anchors_ = true
+
+[node name="flower_pistil" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_mg056")
+scale = Vector2(0.212567, 0.212567)
+texture = ExtResource("1_qtjug")
+
+[connection signal="ready" from="." to="petalbutton1" method="_on_flower_ready"]
+[connection signal="pressed" from="petalbutton1" to="petalbutton1" method="_on_pressed"]
+[connection signal="pressed" from="petalbutton2" to="petalbutton2" method="_on_pressed"]
+[connection signal="pressed" from="petalbutton3" to="petalbutton3" method="_on_pressed"]
+[connection signal="pressed" from="petalbutton4" to="petalbutton4" method="_on_pressed"]
+[connection signal="pressed" from="petalbutton5" to="petalbutton5" method="_on_pressed"]
+[connection signal="pressed" from="petalbutton6" to="petalbutton6" method="_on_pressed"]
+[connection signal="pressed" from="petalbutton7" to="petalbutton7" method="_on_pressed"]
+[connection signal="pressed" from="petalbutton8" to="petalbutton8" method="_on_pressed"]

@@ -1,0 +1,47 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="lovemenot"
+run/main_scene="res://scenes/tcsn/loading.tscn"
+config/features=PackedStringArray("4.3", "Mobile")
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/image="res://sprites/bootsplash.png"
+boot_splash/use_filter=false
+config/icon="res://icon.svg"
+boot_splash/minimum_display_time=1
+
+[autoload]
+
+Transition="*res://scenes/tcsn/transition.tscn"
+Global="*res://scenes/scripts/loser_winner.gd"
+
+[display]
+
+window/size/viewport_width=1080
+window/size/viewport_height=1920
+window/stretch/mode="viewport"
+window/handheld/orientation=1
+
+[file_customization]
+
+folder_colors={
+"res://android/": "green",
+"res://exports/": "teal",
+"res://scenes/": "red",
+"res://sprites/": "purple"
+}
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true
