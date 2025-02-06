@@ -18,9 +18,9 @@ position = Vector2(-23, -22)
 
 [node name="Label" type="Label" parent="."]
 material = SubResource("ShaderMaterial_fa740")
-offset_left = 6.0
+offset_left = 16.0
 offset_top = 167.0
-offset_right = 1075.0
+offset_right = 1085.0
 offset_bottom = 418.0
 size_flags_horizontal = 4
 size_flags_vertical = 1
@@ -30,7 +30,5 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="QRView" parent="." instance=ExtResource("4_ggipo")]
-offset_left = 296.0
 offset_top = 984.0
-offset_right = 296.0
 offset_bottom = 984.0

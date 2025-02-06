@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://bcb1308m705nx" path="res://sprites/UI Big Play Button.png" id="2_pfqfb"]
 [ext_resource type="Shader" path="res://scenes/shaders/background.gdshader" id="2_vln7t"]
 [ext_resource type="PackedScene" uid="uid://b41i36u7wnmb8" path="res://scenes/tcsn/background.tscn" id="3_ce1kg"]
-[ext_resource type="LabelSettings" uid="uid://cmrqtgl8q0d6m" path="res://scenes/font_settings/label_1.tres" id="4_sa3ko"]
+[ext_resource type="LabelSettings" uid="uid://dg8qy6jybduu4" path="res://scenes/font_settings/label_3.tres" id="4_qrcov"]
 [ext_resource type="Shader" path="res://scenes/shaders/wavetext.gdshader" id="5_2foi7"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jcb36"]
@@ -56,15 +56,15 @@ material = SubResource("ShaderMaterial_0r7oh")
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
-offset_top = 832.0
-offset_bottom = 946.0
+offset_top = 751.0
+offset_bottom = 865.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 text = "Lucky Voucher
 "
-label_settings = ExtResource("4_sa3ko")
+label_settings = ExtResource("4_qrcov")
 horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true

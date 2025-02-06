@@ -3,5 +3,8 @@
 [ext_resource type="FontFile" uid="uid://2gm83ci1c064" path="res://sprites/fonts/pixelFont-7-8x14-sproutLands.ttf" id="1_hebao"]
 
 [resource]
+line_spacing = 40.0
 font = ExtResource("1_hebao")
 font_size = 61
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)

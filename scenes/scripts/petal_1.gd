@@ -14,4 +14,4 @@ func _on_pressed() -> void:
 	if Global.win_lose == true && Global.num  == 8:
 		get_tree().change_scene_to_file("res://scenes/tcsn/winner.tscn")
 	if Global.win_lose == false && Global.num  == 8:
-		get_tree().change_scene_to_file("res://scenes/tcsn/winner.tscn")
+		get_tree().change_scene_to_file("res://scenes/tcsn/loser.tscn")

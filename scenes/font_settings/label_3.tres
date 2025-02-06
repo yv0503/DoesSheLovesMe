@@ -1,0 +1,10 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://dg8qy6jybduu4"]
+
+[ext_resource type="FontFile" uid="uid://2gm83ci1c064" path="res://sprites/fonts/pixelFont-7-8x14-sproutLands.ttf" id="1_wbfww"]
+
+[resource]
+line_spacing = 40.0
+font = ExtResource("1_wbfww")
+font_size = 100
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)

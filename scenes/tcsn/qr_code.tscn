@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://blbwx1inb1rui"]
+[gd_scene load_steps=3 format=3 uid="uid://blbwx1inb1rui"]
 
 [ext_resource type="Script" path="res://scenes/scripts/QRCODE/qr_view.gd" id="1_m8c73"]
+[ext_resource type="LabelSettings" uid="uid://cmrqtgl8q0d6m" path="res://scenes/font_settings/label_1.tres" id="2_g87b8"]
 
 [node name="QRView" type="Control" node_paths=PackedStringArray("text_label", "qr_code_image")]
 layout_mode = 3
@@ -11,20 +12,24 @@ qr_code_image = NodePath("QRCode")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 0
-offset_left = 2.0
+offset_left = 300.0
 offset_top = 56.0
-offset_right = 502.0
+offset_right = 800.0
 offset_bottom = 556.0
 
 [node name="Text" type="Label" parent="."]
 layout_mode = 2
-offset_left = 1.0
-offset_right = 190.0
-offset_bottom = 23.0
+offset_top = 588.0
+offset_right = 1079.0
+offset_bottom = 763.0
+label_settings = ExtResource("2_g87b8")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
 
 [node name="QRCode" type="TextureRect" parent="."]
 layout_mode = 2
-offset_left = 2.0
+offset_left = 300.0
 offset_top = 56.0
-offset_right = 502.0
+offset_right = 800.0
 offset_bottom = 556.0
