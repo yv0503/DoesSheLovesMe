@@ -12,12 +12,12 @@ void fragment() {
 	if (dist<tolerance)
 	{
 		tex_color.rgba = replace_color.rgba;
-	}	
+	}
 	COLOR = tex_color;
 	float pattern_val = texture(dissolve_pattern, UV).r;
 	COLOR.a *= step(dissolve_state, pattern_val);
-	
-	
-	
-	
+
+
+
+
 }

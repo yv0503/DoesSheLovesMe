@@ -42,6 +42,7 @@ region_rect = Rect2(3, 2, 90, 27)
 [node name="loser" type="Node2D"]
 
 [node name="background" parent="." instance=ExtResource("1_2i3sw")]
+position = Vector2(-32, -16)
 
 [node name="Label" type="Label" parent="."]
 material = SubResource("ShaderMaterial_3uw57")
@@ -63,6 +64,7 @@ vertical_alignment = 1
 
 [node name="Jokes" type="Label" parent="Label"]
 material = SubResource("ShaderMaterial_vtfxy")
+layout_mode = 0
 offset_left = 115.0
 offset_top = 355.0
 offset_right = 943.0

@@ -1,6 +1,6 @@
 extends Node2D
 
-var url = "" #Insert Api
+var url = "" #Insert url
 @onready var http_request = $HTTPRequest
 
 func _ready() -> void:
