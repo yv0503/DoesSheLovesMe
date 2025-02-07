@@ -5,6 +5,6 @@
 [resource]
 line_spacing = 40.0
 font = ExtResource("1_hebao")
-font_size = 61
+font_size = 48
 outline_size = 5
 outline_color = Color(0, 0, 0, 1)

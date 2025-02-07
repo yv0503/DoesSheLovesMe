@@ -1,5 +1,6 @@
-[gd_scene load_steps=16 format=3 uid="uid://cuebf00aglwjx"]
+[gd_scene load_steps=17 format=3 uid="uid://cuebf00aglwjx"]
 
+[ext_resource type="PackedScene" uid="uid://db70m0rumfcl5" path="res://scenes/tcsn/lighting.tscn" id="1_1v2jx"]
 [ext_resource type="PackedScene" uid="uid://b41i36u7wnmb8" path="res://scenes/tcsn/background.tscn" id="1_2i3sw"]
 [ext_resource type="FontFile" uid="uid://2gm83ci1c064" path="res://sprites/fonts/pixelFont-7-8x14-sproutLands.ttf" id="1_pbirm"]
 [ext_resource type="Shader" path="res://scenes/shaders/wavetext.gdshader" id="2_e8cib"]
@@ -41,6 +42,8 @@ region_rect = Rect2(3, 2, 90, 27)
 
 [node name="loser" type="Node2D"]
 
+[node name="lighting" parent="." instance=ExtResource("1_1v2jx")]
+
 [node name="background" parent="." instance=ExtResource("1_2i3sw")]
 position = Vector2(-32, -16)
 
@@ -66,9 +69,9 @@ vertical_alignment = 1
 material = SubResource("ShaderMaterial_vtfxy")
 layout_mode = 0
 offset_left = 115.0
-offset_top = 355.0
+offset_top = 336.0
 offset_right = 943.0
-offset_bottom = 578.0
+offset_bottom = 559.0
 theme_override_constants/line_spacing = 200
 label_settings = ExtResource("4_qlkqa")
 horizontal_alignment = 1
@@ -86,9 +89,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -166.0
-offset_top = 423.5
+offset_top = 1370.5
 offset_right = 204.0
-offset_bottom = 577.5
+offset_bottom = 1524.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.982187, 0.444732, 0, 1)

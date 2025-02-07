@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://blbwx1inb1rui"]
+[gd_scene load_steps=4 format=3 uid="uid://blbwx1inb1rui"]
 
 [ext_resource type="Script" path="res://scenes/scripts/QRCODE/qr_view.gd" id="1_m8c73"]
 [ext_resource type="LabelSettings" uid="uid://cmrqtgl8q0d6m" path="res://scenes/font_settings/label_1.tres" id="2_g87b8"]
+[ext_resource type="PackedScene" uid="uid://bg7ncxbfjjhl" path="res://scenes/tcsn/request.tscn" id="3_u6qgf"]
 
 [node name="QRView" type="Control" node_paths=PackedStringArray("text_label", "qr_code_image")]
 layout_mode = 3
@@ -35,3 +36,5 @@ offset_left = 300.0
 offset_top = 56.0
 offset_right = 800.0
 offset_bottom = 556.0
+
+[node name="Request" parent="." instance=ExtResource("3_u6qgf")]
