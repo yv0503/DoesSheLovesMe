@@ -14,7 +14,7 @@ func randomWinner():
 	var rndint = random.randi_range(0,100)
 	for x in range(0,10):
 		if x == rndint:
-			win_lose = false
+			win_lose = true
 	for x in range(11,100):
 		if x == rndint:
-			win_lose = true
+			win_lose = false
