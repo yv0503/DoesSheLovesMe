@@ -4,7 +4,7 @@ var random = RandomNumberGenerator.new()
 
 func on_start_play():
 	random.randomize()
-	var rndInt : int = random.randi_range(0, 150)
+	var rndInt : int = random.randi_range(0, 170)
 	Transition.transition()
 	await Transition.on_transition_finished
 	for x in range(0, 50):
@@ -16,6 +16,9 @@ func on_start_play():
 	for x in range(101,150):
 		if(rndInt == x):
 			get_tree().change_scene_to_file("res://scenes/tcsn/vouchers/voucher_3.tscn")
+	for x in range(151,170):
+		if(rndInt == x):
+			get_tree().change_scene_to_file("res://scenes/tcsn/vouchers/voucher_4.tscn")
 
 func _on_pressed() -> void:
 	on_start_play()

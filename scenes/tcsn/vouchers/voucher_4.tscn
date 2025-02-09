@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://b5n7ryftkcc0s"]
+
+[ext_resource type="PackedScene" uid="uid://db70m0rumfcl5" path="res://scenes/tcsn/graphics/lighting.tscn" id="1_21r87"]
+[ext_resource type="PackedScene" uid="uid://b41i36u7wnmb8" path="res://scenes/tcsn/graphics/background.tscn" id="2_c5ao0"]
+[ext_resource type="PackedScene" uid="uid://cj2vtrsge4mif" path="res://scenes/tcsn/flowers/flower_4.tscn" id="3_ktob0"]
+
+[node name="Voucher" type="Node2D"]
+
+[node name="lighting" parent="." instance=ExtResource("1_21r87")]
+
+[node name="background" parent="." instance=ExtResource("2_c5ao0")]
+position = Vector2(-36, 17)
+
+[node name="flower" parent="." instance=ExtResource("3_ktob0")]
+position = Vector2(540, 960)
+scale = Vector2(2, 2)

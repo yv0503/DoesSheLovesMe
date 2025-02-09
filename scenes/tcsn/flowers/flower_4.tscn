@@ -1,87 +1,185 @@
-[gd_scene load_steps=46 format=3 uid="uid://ba6f0q71aj6f3"]
+[gd_scene load_steps=67 format=3 uid="uid://cj2vtrsge4mif"]
 
-[ext_resource type="Shader" path="res://scenes/shaders/color_changers/change_color.gdshader" id="1_0svkr"]
-[ext_resource type="Shader" path="res://scenes/shaders/background.gdshader" id="1_fkgii"]
-[ext_resource type="Texture2D" uid="uid://cejkx4cdqqtk6" path="res://sprites/flower/flower_petal_pull_animation1.png" id="2_etiey"]
-[ext_resource type="Texture2D" uid="uid://15vppuvf5i1b" path="res://sprites/flower/flower_petal_pull_animation2.png" id="3_8lfcx"]
-[ext_resource type="Texture2D" uid="uid://dcbhjbvbdjdo" path="res://sprites/flower/flower_petal_pull_animation3.png" id="4_cth6d"]
-[ext_resource type="Texture2D" uid="uid://ci8cm0kcquti3" path="res://sprites/flower/flower_petal_pull_animation4.png" id="5_wqyb5"]
-[ext_resource type="Texture2D" uid="uid://cpulxm5di7dku" path="res://sprites/flower/flower_petal_pull_animation5.png" id="6_j23hr"]
-[ext_resource type="Texture2D" uid="uid://dix20fy33lwx1" path="res://sprites/flower/flower_petal_pull_animation6.png" id="7_0167t"]
-[ext_resource type="Texture2D" uid="uid://cpyf853ujy812" path="res://sprites/flower/flower_petal_pull_animation7.png" id="8_bsxce"]
-[ext_resource type="Texture2D" uid="uid://brdx74spwrnqq" path="res://sprites/flower/flower_petal_pull_animation8.png" id="9_tctbu"]
-[ext_resource type="Texture2D" uid="uid://o4h23opf1an3" path="res://sprites/flower/flower_petal_pull_animation9.png" id="10_7dlom"]
-[ext_resource type="Texture2D" uid="uid://bsvfvbdyy5uni" path="res://sprites/flower/flower_petal_pull_animation10.png" id="11_txu4b"]
-[ext_resource type="Texture2D" uid="uid://ddiwrie4a4x3i" path="res://sprites/flower/flower_petal_pull_animation11.png" id="12_ysbnh"]
-[ext_resource type="Texture2D" uid="uid://cwnnehjh5no6s" path="res://sprites/flower/flower_petal_pull_animation12.png" id="13_bxmk4"]
-[ext_resource type="Texture2D" uid="uid://bqxpm5nod5pne" path="res://sprites/flower/flower_petal_pull_animation13.png" id="14_x0cp2"]
-[ext_resource type="Texture2D" uid="uid://d03686xexqmpi" path="res://sprites/flower/flower_petal_pull_animation14.png" id="15_wslm8"]
-[ext_resource type="Script" path="res://scenes/scripts/petal_1.gd" id="16_kejpw"]
-[ext_resource type="Texture2D" uid="uid://c4o0gfjg5va1r" path="res://sprites/flower/flower_pistils.png" id="17_kb0wt"]
+[ext_resource type="Shader" path="res://scenes/shaders/color_changers/change_color.gdshader" id="1_ey6cb"]
+[ext_resource type="Texture2D" uid="uid://cejkx4cdqqtk6" path="res://sprites/flower/flower_petal_pull_animation1.png" id="2_014vj"]
+[ext_resource type="Texture2D" uid="uid://15vppuvf5i1b" path="res://sprites/flower/flower_petal_pull_animation2.png" id="3_i758f"]
+[ext_resource type="Texture2D" uid="uid://dcbhjbvbdjdo" path="res://sprites/flower/flower_petal_pull_animation3.png" id="4_dhilh"]
+[ext_resource type="Texture2D" uid="uid://ci8cm0kcquti3" path="res://sprites/flower/flower_petal_pull_animation4.png" id="5_0fgpg"]
+[ext_resource type="Texture2D" uid="uid://cpulxm5di7dku" path="res://sprites/flower/flower_petal_pull_animation5.png" id="6_5b51m"]
+[ext_resource type="Texture2D" uid="uid://dix20fy33lwx1" path="res://sprites/flower/flower_petal_pull_animation6.png" id="7_mjkhb"]
+[ext_resource type="Texture2D" uid="uid://cpyf853ujy812" path="res://sprites/flower/flower_petal_pull_animation7.png" id="8_afdlk"]
+[ext_resource type="Texture2D" uid="uid://brdx74spwrnqq" path="res://sprites/flower/flower_petal_pull_animation8.png" id="9_8wk0w"]
+[ext_resource type="Texture2D" uid="uid://o4h23opf1an3" path="res://sprites/flower/flower_petal_pull_animation9.png" id="10_ry2yw"]
+[ext_resource type="Texture2D" uid="uid://bsvfvbdyy5uni" path="res://sprites/flower/flower_petal_pull_animation10.png" id="11_qj67x"]
+[ext_resource type="Texture2D" uid="uid://ddiwrie4a4x3i" path="res://sprites/flower/flower_petal_pull_animation11.png" id="12_d323a"]
+[ext_resource type="Texture2D" uid="uid://cwnnehjh5no6s" path="res://sprites/flower/flower_petal_pull_animation12.png" id="13_tfabm"]
+[ext_resource type="Texture2D" uid="uid://bqxpm5nod5pne" path="res://sprites/flower/flower_petal_pull_animation13.png" id="14_0oshq"]
+[ext_resource type="Texture2D" uid="uid://d03686xexqmpi" path="res://sprites/flower/flower_petal_pull_animation14.png" id="15_3akvt"]
+[ext_resource type="Script" path="res://scenes/scripts/petal_1.gd" id="16_tveq4"]
+[ext_resource type="Shader" path="res://scenes/shaders/background.gdshader" id="17_etknk"]
+[ext_resource type="Texture2D" uid="uid://c4o0gfjg5va1r" path="res://sprites/flower/flower_pistils.png" id="18_7668m"]
+
+[sub_resource type="Gradient" id="Gradient_1edga"]
+colors = PackedColorArray(0, 0, 0, 1, 1, 0.23, 0.23, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_nljgu"]
+gradient = SubResource("Gradient_1edga")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_k0p37"]
+shader = ExtResource("1_ey6cb")
+shader_parameter/height = 15.0
+shader_parameter/frequency = 50.0
+shader_parameter/speed = 4.0
+shader_parameter/mix_amount = 1.0
+shader_parameter/gradient = SubResource("GradientTexture2D_nljgu")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xdja5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_014vj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_i758f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dhilh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_0fgpg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_5b51m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_mjkhb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_afdlk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_8wk0w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ry2yw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_qj67x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_d323a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_tfabm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_0oshq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_3akvt")
+}],
+"loop": false,
+"name": &"petal_pull",
+"speed": 20.0
+}]
 
 [sub_resource type="Gradient" id="Gradient_mmgrm"]
-offsets = PackedFloat32Array(0.196721, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0.741308, 0.388845, 0.231933, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_evgtx"]
 gradient = SubResource("Gradient_mmgrm")
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_hx4kc"]
-shader = ExtResource("1_0svkr")
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_aghgh"]
+shader = ExtResource("1_ey6cb")
 shader_parameter/height = 15.0
 shader_parameter/frequency = 50.0
 shader_parameter/speed = 4.0
 shader_parameter/mix_amount = 1.0
 shader_parameter/gradient = SubResource("GradientTexture2D_evgtx")
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_xdja5"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_etiey")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_8lfcx")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_cth6d")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_wqyb5")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_j23hr")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_0167t")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_bsxce")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_tctbu")
-}, {
-"duration": 1.0,
-"texture": ExtResource("10_7dlom")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_txu4b")
-}, {
-"duration": 1.0,
-"texture": ExtResource("12_ysbnh")
-}, {
-"duration": 1.0,
-"texture": ExtResource("13_bxmk4")
-}, {
-"duration": 1.0,
-"texture": ExtResource("14_x0cp2")
-}, {
-"duration": 1.0,
-"texture": ExtResource("15_wslm8")
-}],
-"loop": false,
-"name": &"petal_pull",
-"speed": 20.0
-}]
+[sub_resource type="Gradient" id="Gradient_g6j84"]
+colors = PackedColorArray(0, 0, 0, 1, 1, 0.670333, 0.14, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_06m7k"]
+gradient = SubResource("Gradient_g6j84")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_r7n8u"]
+shader = ExtResource("1_ey6cb")
+shader_parameter/height = 15.0
+shader_parameter/frequency = 50.0
+shader_parameter/speed = 4.0
+shader_parameter/mix_amount = 1.0
+shader_parameter/gradient = SubResource("GradientTexture2D_06m7k")
+
+[sub_resource type="Gradient" id="Gradient_57s3d"]
+colors = PackedColorArray(0, 0, 0, 1, 0.528667, 0.65, 0.13, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_vxv5g"]
+gradient = SubResource("Gradient_57s3d")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_u54a1"]
+shader = ExtResource("1_ey6cb")
+shader_parameter/height = 15.0
+shader_parameter/frequency = 50.0
+shader_parameter/speed = 4.0
+shader_parameter/mix_amount = 1.0
+shader_parameter/gradient = SubResource("GradientTexture2D_vxv5g")
+
+[sub_resource type="Gradient" id="Gradient_dspt1"]
+colors = PackedColorArray(0, 0, 0, 1, 0, 0.297667, 0.94, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_uinyg"]
+gradient = SubResource("Gradient_dspt1")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ntu1b"]
+shader = ExtResource("1_ey6cb")
+shader_parameter/height = 15.0
+shader_parameter/frequency = 50.0
+shader_parameter/speed = 4.0
+shader_parameter/mix_amount = 1.0
+shader_parameter/gradient = SubResource("GradientTexture2D_uinyg")
+
+[sub_resource type="Gradient" id="Gradient_tmq5n"]
+colors = PackedColorArray(0, 0, 0, 1, 0.2035, 0.19, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_6n1h3"]
+gradient = SubResource("Gradient_tmq5n")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_o2suq"]
+shader = ExtResource("1_ey6cb")
+shader_parameter/height = 15.0
+shader_parameter/frequency = 50.0
+shader_parameter/speed = 4.0
+shader_parameter/mix_amount = 1.0
+shader_parameter/gradient = SubResource("GradientTexture2D_6n1h3")
+
+[sub_resource type="Gradient" id="Gradient_a6wu7"]
+colors = PackedColorArray(0, 0, 0, 1, 0.166667, 0, 1, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_4ns5u"]
+gradient = SubResource("Gradient_a6wu7")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_sky0f"]
+shader = ExtResource("1_ey6cb")
+shader_parameter/height = 15.0
+shader_parameter/frequency = 50.0
+shader_parameter/speed = 4.0
+shader_parameter/mix_amount = 1.0
+shader_parameter/gradient = SubResource("GradientTexture2D_4ns5u")
+
+[sub_resource type="Gradient" id="Gradient_557qn"]
+colors = PackedColorArray(0, 0, 0, 1, 0.87131, 0.3293, 0.89, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_335fy"]
+gradient = SubResource("Gradient_557qn")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_66b7r"]
+shader = ExtResource("1_ey6cb")
+shader_parameter/height = 15.0
+shader_parameter/frequency = 50.0
+shader_parameter/speed = 4.0
+shader_parameter/mix_amount = 1.0
+shader_parameter/gradient = SubResource("GradientTexture2D_335fy")
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1mi5c"]
 
@@ -128,7 +226,7 @@ animations = [{
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mfirv"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_mg056"]
-shader = ExtResource("1_fkgii")
+shader = ExtResource("17_etknk")
 shader_parameter/height = 10.0
 shader_parameter/frequency = 5.0
 shader_parameter/speed = 5.0
@@ -138,14 +236,14 @@ shader_parameter/speed = 5.0
 [node name="Timer" type="Timer" parent="."]
 
 [node name="petal1" type="AnimatedSprite2D" parent="."]
-material = SubResource("ShaderMaterial_hx4kc")
+material = SubResource("ShaderMaterial_k0p37")
 position = Vector2(-168, 199)
 scale = Vector2(0.199594, 0.201548)
 sprite_frames = SubResource("SpriteFrames_xdja5")
 animation = &"petal_pull"
 
 [node name="petal2" type="AnimatedSprite2D" parent="."]
-material = SubResource("ShaderMaterial_hx4kc")
+material = SubResource("ShaderMaterial_aghgh")
 position = Vector2(43, 275)
 rotation = -0.832522
 scale = Vector2(0.210574, 0.215998)
@@ -153,7 +251,7 @@ sprite_frames = SubResource("SpriteFrames_xdja5")
 animation = &"petal_pull"
 
 [node name="petal3" type="AnimatedSprite2D" parent="."]
-material = SubResource("ShaderMaterial_hx4kc")
+material = SubResource("ShaderMaterial_r7n8u")
 position = Vector2(201, 196)
 rotation = -1.48004
 scale = Vector2(0.210574, 0.215998)
@@ -161,7 +259,7 @@ sprite_frames = SubResource("SpriteFrames_xdja5")
 animation = &"petal_pull"
 
 [node name="petal4" type="AnimatedSprite2D" parent="."]
-material = SubResource("ShaderMaterial_hx4kc")
+material = SubResource("ShaderMaterial_u54a1")
 position = Vector2(289.291, 16.075)
 rotation = -2.22355
 scale = Vector2(0.229463, 0.229559)
@@ -170,7 +268,7 @@ sprite_frames = SubResource("SpriteFrames_xdja5")
 animation = &"petal_pull"
 
 [node name="petal5" type="AnimatedSprite2D" parent="."]
-material = SubResource("ShaderMaterial_hx4kc")
+material = SubResource("ShaderMaterial_ntu1b")
 position = Vector2(194, -196)
 rotation = -3.05433
 scale = Vector2(0.211498, 0.211586)
@@ -179,7 +277,7 @@ sprite_frames = SubResource("SpriteFrames_xdja5")
 animation = &"petal_pull"
 
 [node name="petal6" type="AnimatedSprite2D" parent="."]
-material = SubResource("ShaderMaterial_hx4kc")
+material = SubResource("ShaderMaterial_o2suq")
 position = Vector2(-3.00002, -272)
 rotation = -3.84507
 scale = Vector2(0.211498, 0.211586)
@@ -188,7 +286,7 @@ sprite_frames = SubResource("SpriteFrames_xdja5")
 animation = &"petal_pull"
 
 [node name="petal7" type="AnimatedSprite2D" parent="."]
-material = SubResource("ShaderMaterial_hx4kc")
+material = SubResource("ShaderMaterial_sky0f")
 position = Vector2(-211, -171)
 rotation = -4.73489
 scale = Vector2(0.211498, 0.211586)
@@ -197,7 +295,7 @@ sprite_frames = SubResource("SpriteFrames_xdja5")
 animation = &"petal_pull"
 
 [node name="petal8" type="AnimatedSprite2D" parent="."]
-material = SubResource("ShaderMaterial_hx4kc")
+material = SubResource("ShaderMaterial_66b7r")
 position = Vector2(-267, 75)
 rotation = -5.67307
 scale = Vector2(0.211498, 0.211586)
@@ -226,7 +324,7 @@ theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_34cdf")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_rqgoy")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_nkd02")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_cddha")
-script = ExtResource("16_kejpw")
+script = ExtResource("16_tveq4")
 petal = NodePath("../petal1")
 metadata/_edit_use_anchors_ = true
 
@@ -252,7 +350,7 @@ theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_fpcwk")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_43f8c")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_rv6f4")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_mfirv")
-script = ExtResource("16_kejpw")
+script = ExtResource("16_tveq4")
 petal = NodePath("../petal2")
 metadata/_edit_use_anchors_ = true
 
@@ -280,7 +378,7 @@ theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_fpcwk")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_43f8c")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_rv6f4")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_mfirv")
-script = ExtResource("16_kejpw")
+script = ExtResource("16_tveq4")
 petal = NodePath("../petal3")
 metadata/_edit_use_anchors_ = true
 
@@ -310,7 +408,7 @@ theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_fpcwk")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_43f8c")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_rv6f4")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_mfirv")
-script = ExtResource("16_kejpw")
+script = ExtResource("16_tveq4")
 petal = NodePath("../petal4")
 metadata/_edit_use_anchors_ = true
 
@@ -337,7 +435,7 @@ theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_fpcwk")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_43f8c")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_rv6f4")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_mfirv")
-script = ExtResource("16_kejpw")
+script = ExtResource("16_tveq4")
 petal = NodePath("../petal5")
 metadata/_edit_use_anchors_ = true
 
@@ -364,7 +462,7 @@ theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_fpcwk")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_43f8c")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_rv6f4")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_mfirv")
-script = ExtResource("16_kejpw")
+script = ExtResource("16_tveq4")
 petal = NodePath("../petal6")
 metadata/_edit_use_anchors_ = true
 
@@ -391,7 +489,7 @@ theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_fpcwk")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_43f8c")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_rv6f4")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_mfirv")
-script = ExtResource("16_kejpw")
+script = ExtResource("16_tveq4")
 petal = NodePath("../petal7")
 metadata/_edit_use_anchors_ = true
 
@@ -418,14 +516,14 @@ theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_fpcwk")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_43f8c")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_rv6f4")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_mfirv")
-script = ExtResource("16_kejpw")
+script = ExtResource("16_tveq4")
 petal = NodePath("../petal8")
 metadata/_edit_use_anchors_ = true
 
 [node name="flower_pistil" type="Sprite2D" parent="."]
 material = SubResource("ShaderMaterial_mg056")
 scale = Vector2(0.212567, 0.212567)
-texture = ExtResource("17_kb0wt")
+texture = ExtResource("18_7668m")
 
 [connection signal="ready" from="." to="petalbutton1" method="_on_flower_ready"]
 [connection signal="pressed" from="petalbutton1" to="petalbutton1" method="_on_pressed"]
