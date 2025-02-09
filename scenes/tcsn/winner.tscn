@@ -67,6 +67,7 @@ script = ExtResource("3_e0b0f")
 
 [node name="Label" type="Label" parent="winner_menu"]
 material = SubResource("ShaderMaterial_fa740")
+layout_mode = 0
 offset_left = 16.0
 offset_top = 167.0
 offset_right = 1085.0

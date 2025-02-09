@@ -1,6 +1,49 @@
-[gd_scene load_steps=2 format=3 uid="uid://b41i36u7wnmb8"]
+[gd_scene load_steps=9 format=3 uid="uid://b41i36u7wnmb8"]
 
 [ext_resource type="Texture2D" uid="uid://djiy52biympwj" path="res://sprites/backgrounds/bootsplash.png" id="1_bxsof"]
+[ext_resource type="Texture2D" uid="uid://bnbwfl1u24461" path="res://sprites/leaf_particles_1.png" id="2_0woxe"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_a1so4"]
+particles_animation = true
+particles_anim_h_frames = 3
+particles_anim_v_frames = 3
+particles_anim_loop = false
+
+[sub_resource type="Curve" id="Curve_46ja6"]
+min_value = -360.0
+max_value = 360.0
+_data = [Vector2(0, -11.8681), 0.0, -2769.23, 0, 0, Vector2(1, 360), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_jt3y6"]
+width = 1080
+curve = SubResource("Curve_46ja6")
+
+[sub_resource type="Gradient" id="Gradient_u8vd7"]
+offsets = PackedFloat32Array(0, 0.213115, 0.778689, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_wbym5"]
+gradient = SubResource("Gradient_u8vd7")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_5ldls"]
+lifetime_randomness = 0.1
+particle_flag_align_y = true
+particle_flag_rotate_y = true
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(700, 1200, 1)
+direction = Vector3(1, 2, 0)
+spread = 20.0
+initial_velocity_min = 300.0
+initial_velocity_max = 500.0
+angular_velocity_curve = SubResource("CurveTexture_jt3y6")
+gravity = Vector3(0, 40, 0)
+scale_min = 0.5
+color_ramp = SubResource("GradientTexture1D_wbym5")
+hue_variation_min = -2.23517e-08
+hue_variation_max = -2.23517e-08
+anim_offset_max = 1.0
 
 [node name="background" type="Node2D"]
 
@@ -8,3 +51,13 @@
 position = Vector2(576, 1010)
 scale = Vector2(1.14329, 1.225)
 texture = ExtResource("1_bxsof")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+material = SubResource("CanvasItemMaterial_a1so4")
+position = Vector2(300, 300)
+amount = 30
+process_material = SubResource("ParticleProcessMaterial_5ldls")
+texture = ExtResource("2_0woxe")
+lifetime = 3.0
+randomness = 1.0
+fixed_fps = 60

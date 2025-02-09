@@ -17,4 +17,6 @@ metadata/_snap_enabled = true
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
 position = Vector2(546, 970)
+color = Color(1, 1, 1, 0.8)
+energy = 0.5
 texture = SubResource("GradientTexture2D_whgxe")
