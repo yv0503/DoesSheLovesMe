@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="lovemenot"
-run/main_scene="res://scenes/tcsn/loading.tscn"
+run/main_scene="res://scenes/tcsn/menus/loading.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
 boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/image="res://sprites/backgrounds/bootsplash.png"
@@ -21,7 +21,7 @@ boot_splash/minimum_display_time=1
 
 [autoload]
 
-Transition="*res://scenes/tcsn/transition.tscn"
+Transition="*res://scenes/tcsn/graphics/transition.tscn"
 Global="*res://scenes/scripts/loser_winner.gd"
 
 [display]

@@ -16,9 +16,9 @@ func _on_pressed() -> void:
 		Global.win_lose = false
 		Global.num +=1
 	if Global.win_lose == true && Global.num == 8:
-		get_tree().change_scene_to_file("res://scenes/tcsn/winner.tscn")
+		get_tree().change_scene_to_file("res://scenes/tcsn/menus/winner.tscn")
 	if Global.win_lose == false && Global.num == 8:
-		get_tree().change_scene_to_file("res://scenes/tcsn/loser.tscn")
+		get_tree().change_scene_to_file("res://scenes/tcsn/menus/loser.tscn")
 		
 func petal_anim():
 	petal.play("petal_pull")

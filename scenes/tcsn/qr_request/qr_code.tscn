@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scenes/scripts/QRCODE/qr_view.gd" id="1_m8c73"]
 [ext_resource type="LabelSettings" uid="uid://cmrqtgl8q0d6m" path="res://scenes/font_settings/label_1.tres" id="2_g87b8"]
-[ext_resource type="PackedScene" uid="uid://bg7ncxbfjjhl" path="res://scenes/tcsn/request.tscn" id="3_u6qgf"]
+[ext_resource type="PackedScene" uid="uid://bg7ncxbfjjhl" path="res://scenes/tcsn/qr_request/request.tscn" id="3_u6qgf"]
 
 [node name="QRView" type="Control" node_paths=PackedStringArray("text_label", "qr_code_image")]
 layout_mode = 3

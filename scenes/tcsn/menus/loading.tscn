@@ -1,0 +1,51 @@
+[gd_scene load_steps=7 format=3 uid="uid://526l6b3w5kkd"]
+
+[ext_resource type="Script" path="res://scenes/scripts/loading.gd" id="1_sme4n"]
+[ext_resource type="PackedScene" uid="uid://db70m0rumfcl5" path="res://scenes/tcsn/graphics/lighting.tscn" id="2_v7eyi"]
+[ext_resource type="Texture2D" uid="uid://djiy52biympwj" path="res://sprites/backgrounds/bootsplash.png" id="3_gk3k3"]
+[ext_resource type="Shader" path="res://scenes/shaders/wavetext.gdshader" id="4_xucow"]
+[ext_resource type="FontFile" uid="uid://2gm83ci1c064" path="res://sprites/fonts/pixelFont-7-8x14-sproutLands.ttf" id="5_amfya"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0in1m"]
+shader = ExtResource("4_xucow")
+shader_parameter/height = 10.0
+shader_parameter/frequency = 5.0
+shader_parameter/speed = 5.0
+
+[node name="Loading" type="Node2D"]
+script = ExtResource("1_sme4n")
+
+[node name="lighting" parent="." instance=ExtResource("2_v7eyi")]
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+autostart = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(567, 892)
+scale = Vector2(2.3272, 2.3272)
+texture = ExtResource("3_gk3k3")
+
+[node name="Label" type="Label" parent="."]
+material = SubResource("ShaderMaterial_0in1m")
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 440.0
+offset_top = 940.0
+offset_right = 696.0
+offset_bottom = 982.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2, 2)
+pivot_offset = Vector2(128, 21)
+theme_override_fonts/font = ExtResource("5_amfya")
+theme_override_font_sizes/font_size = 50
+text = "Starting..."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
