@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scenes/scripts/transition.gd" id="1_wslii"]
 [ext_resource type="Shader" path="res://scenes/shaders/transition.gdshader" id="2_g41n0"]
-[ext_resource type="Texture2D" uid="uid://8uts0hft224y" path="res://sprites/noise_mesh.png" id="3_iyu3r"]
+[ext_resource type="Texture2D" uid="uid://8uts0hft224y" path="res://sprites/mesh/noise_mesh.png" id="3_iyu3r"]
 
 [sub_resource type="Animation" id="Animation_b5vmm"]
 length = 0.001

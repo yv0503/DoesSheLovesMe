@@ -3,7 +3,7 @@
 [ext_resource type="FontFile" uid="uid://2gm83ci1c064" path="res://sprites/fonts/pixelFont-7-8x14-sproutLands.ttf" id="1_aujm4"]
 [ext_resource type="PackedScene" uid="uid://db70m0rumfcl5" path="res://scenes/tcsn/lighting.tscn" id="1_ewffr"]
 [ext_resource type="Script" path="res://scenes/scripts/start.gd" id="1_ffh8t"]
-[ext_resource type="Texture2D" uid="uid://bcb1308m705nx" path="res://sprites/UI Big Play Button.png" id="2_pfqfb"]
+[ext_resource type="Texture2D" uid="uid://bcb1308m705nx" path="res://sprites/UI/UI Big Play Button.png" id="2_pfqfb"]
 [ext_resource type="Shader" path="res://scenes/shaders/background.gdshader" id="2_vln7t"]
 [ext_resource type="PackedScene" uid="uid://b41i36u7wnmb8" path="res://scenes/tcsn/background.tscn" id="3_ce1kg"]
 [ext_resource type="Shader" path="res://scenes/shaders/wavetext.gdshader" id="5_2foi7"]

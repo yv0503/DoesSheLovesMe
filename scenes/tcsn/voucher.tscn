@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scenes/scripts/voucher_button.gd" id="1_1rbuh"]
 [ext_resource type="PackedScene" uid="uid://b41i36u7wnmb8" path="res://scenes/tcsn/background.tscn" id="1_l7j0v"]
 [ext_resource type="Texture2D" uid="uid://c2h3vlilfs5s4" path="res://sprites/objects/flower_animation.png" id="2_mb258"]
-[ext_resource type="Texture2D" uid="uid://ctf1dgtt5x0oi" path="res://sprites/flower_animation.png" id="3_a7ppv"]
+[ext_resource type="Texture2D" uid="uid://ctf1dgtt5x0oi" path="res://sprites/flower/flower_animation.png" id="3_a7ppv"]
 [ext_resource type="Shader" path="res://scenes/shaders/background.gdshader" id="3_ptlmr"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_v6fx7"]

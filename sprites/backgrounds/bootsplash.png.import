@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bcb1308m705nx"
-path="res://.godot/imported/UI Big Play Button.png-3d24bf16e7d8e2400a663334164412a0.ctex"
+uid="uid://djiy52biympwj"
+path="res://.godot/imported/bootsplash.png-c1e1bdcc57c946fbf92571974e93e288.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/UI Big Play Button.png"
-dest_files=["res://.godot/imported/UI Big Play Button.png-3d24bf16e7d8e2400a663334164412a0.ctex"]
+source_file="res://sprites/backgrounds/bootsplash.png"
+dest_files=["res://.godot/imported/bootsplash.png-c1e1bdcc57c946fbf92571974e93e288.ctex"]
 
 [params]
 

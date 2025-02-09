@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctf1dgtt5x0oi"
-path="res://.godot/imported/flower_animation.png-3ff3e525a06d39c96309ad6116345e8b.ctex"
+uid="uid://bcb1308m705nx"
+path="res://.godot/imported/UI Big Play Button.png-f6dac91ae8442fef4f65546bcd66a66b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/flower_animation.png"
-dest_files=["res://.godot/imported/flower_animation.png-3ff3e525a06d39c96309ad6116345e8b.ctex"]
+source_file="res://sprites/UI/UI Big Play Button.png"
+dest_files=["res://.godot/imported/UI Big Play Button.png-f6dac91ae8442fef4f65546bcd66a66b.ctex"]
 
 [params]
 

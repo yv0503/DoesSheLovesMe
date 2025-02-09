@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djiy52biympwj"
-path="res://.godot/imported/bootsplash.png-8faae196b13bd39b78705cfcb6a75bff.ctex"
+uid="uid://ctf1dgtt5x0oi"
+path="res://.godot/imported/flower_animation.png-1c3d38fce8adacd65a7ab4e6179292eb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/bootsplash.png"
-dest_files=["res://.godot/imported/bootsplash.png-8faae196b13bd39b78705cfcb6a75bff.ctex"]
+source_file="res://sprites/flower/flower_animation.png"
+dest_files=["res://.godot/imported/flower_animation.png-1c3d38fce8adacd65a7ab4e6179292eb.ctex"]
 
 [params]
 

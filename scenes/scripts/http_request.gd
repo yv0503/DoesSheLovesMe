@@ -3,7 +3,7 @@ extends Node2D
 var url = "" #Insert url
 @onready var http_request = $HTTPRequest
 
-func _ready() -> void:
+func _ready():
 	http_request.request_completed.connect(_on_http_request_request_completed)
 	send_request()
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6nfgcr0g5lc7"
-path="res://.godot/imported/UI Settings Buttons.png-3562453dd2f3502e8c9a5e2b4de4ffa0.ctex"
+uid="uid://cd7kh718oyyhk"
+path="res://.godot/imported/lighting_mesh.png-0e2f3f0f79b09960e4ef8df835eb670c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/UI Settings Buttons.png"
-dest_files=["res://.godot/imported/UI Settings Buttons.png-3562453dd2f3502e8c9a5e2b4de4ffa0.ctex"]
+source_file="res://sprites/mesh/lighting_mesh.png"
+dest_files=["res://.godot/imported/lighting_mesh.png-0e2f3f0f79b09960e4ef8df835eb670c.ctex"]
 
 [params]
 
