@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://blbwx1inb1rui" path="res://scenes/tcsn/qr_request/qr_code.tscn" id="4_ggipo"]
 [ext_resource type="FontFile" uid="uid://2gm83ci1c064" path="res://sprites/fonts/pixelFont-7-8x14-sproutLands.ttf" id="7_h57ye"]
 [ext_resource type="Texture2D" uid="uid://bcb1308m705nx" path="res://sprites/UI/UI Big Play Button.png" id="8_x56im"]
-[ext_resource type="Script" path="res://scenes/scripts/start.gd" id="9_6oau7"]
+[ext_resource type="Script" path="res://scenes/scripts/retry.gd" id="9_yhvr6"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_fa740"]
 shader = ExtResource("2_5ci16")
@@ -134,6 +134,6 @@ theme_override_styles/normal = SubResource("StyleBoxTexture_ixsek")
 action_mode = 0
 text = "Retry
 "
-script = ExtResource("9_6oau7")
+script = ExtResource("9_yhvr6")
 
 [connection signal="pressed" from="winner_menu/Start" to="winner_menu/Start" method="_on_pressed"]

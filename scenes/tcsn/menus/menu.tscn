@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://rmwqxvbngjwq"]
+[gd_scene load_steps=19 format=3 uid="uid://rmwqxvbngjwq"]
 
 [ext_resource type="FontFile" uid="uid://2gm83ci1c064" path="res://sprites/fonts/pixelFont-7-8x14-sproutLands.ttf" id="1_aujm4"]
 [ext_resource type="PackedScene" uid="uid://db70m0rumfcl5" path="res://scenes/tcsn/graphics/lighting.tscn" id="1_ewffr"]
@@ -7,6 +7,42 @@
 [ext_resource type="Shader" path="res://scenes/shaders/background.gdshader" id="2_vln7t"]
 [ext_resource type="PackedScene" uid="uid://b41i36u7wnmb8" path="res://scenes/tcsn/graphics/background.tscn" id="3_ce1kg"]
 [ext_resource type="Shader" path="res://scenes/shaders/wavetext.gdshader" id="5_2foi7"]
+
+[sub_resource type="Animation" id="Animation_4257p"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label/TextEdit:theme_override_colors/font_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [null]
+}
+
+[sub_resource type="Animation" id="Animation_ljtau"]
+resource_name = "wrong_code_input"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Label/TextEdit:theme_override_colors/font_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.5),
+"transitions": PackedFloat32Array(1, 2.63902, 1),
+"update": 0,
+"values": [Color(1, 0, 0, 1), Color(1, 0, 0, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_dyvew"]
+_data = {
+"RESET": SubResource("Animation_4257p"),
+"wrong_code_input": SubResource("Animation_ljtau")
+}
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jcb36"]
 shader = ExtResource("2_vln7t")
@@ -54,6 +90,11 @@ offset_bottom = -556.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_dyvew")
+}
+
 [node name="lighting" parent="." instance=ExtResource("1_ewffr")]
 
 [node name="background" parent="." instance=ExtResource("3_ce1kg")]
@@ -78,19 +119,31 @@ horizontal_alignment = 1
 vertical_alignment = 1
 uppercase = true
 
-[node name="Start" type="Button" parent="Label"]
+[node name="TextEdit" type="TextEdit" parent="Label"]
+layout_mode = 0
+offset_left = 121.0
+offset_top = 200.0
+offset_right = 689.0
+offset_bottom = 257.0
+pivot_offset = Vector2(150, 50)
+theme_override_fonts/font = ExtResource("1_aujm4")
+theme_override_font_sizes/font_size = 40
+placeholder_text = "Enter Code"
+
+[node name="Start" type="Button" parent="Label" node_paths=PackedStringArray("input_voucher_code", "wrong_text")]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -126.0
-offset_top = 128.0
-offset_right = 124.0
-offset_bottom = 198.0
+offset_left = 169.0
+offset_top = 136.0
+offset_right = 419.0
+offset_bottom = 206.0
 grow_horizontal = 2
 grow_vertical = 2
+pivot_offset = Vector2(125, 35)
 theme_override_colors/font_color = Color(0.982187, 0.444732, 0, 1)
 theme_override_fonts/font = ExtResource("1_aujm4")
 theme_override_font_sizes/font_size = 48
@@ -100,8 +153,12 @@ theme_override_styles/hover = SubResource("StyleBoxTexture_profp")
 theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_7u3go")
 theme_override_styles/normal = SubResource("StyleBoxTexture_5jsmf")
 action_mode = 0
-text = "Start
-"
+text = "ENTER"
 script = ExtResource("1_ffh8t")
+input_voucher_code = NodePath("../TextEdit")
+wrong_text = NodePath("../../AnimationPlayer")
+
+[node name="HTTPRequest" type="HTTPRequest" parent="Label/Start"]
 
 [connection signal="pressed" from="Label/Start" to="Label/Start" method="_on_pressed"]
+[connection signal="request_completed" from="Label/Start/HTTPRequest" to="Label/Start" method="_on_http_request_request_completed"]

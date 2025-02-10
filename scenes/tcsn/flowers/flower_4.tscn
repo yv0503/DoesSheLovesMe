@@ -1,23 +1,59 @@
-[gd_scene load_steps=67 format=3 uid="uid://cj2vtrsge4mif"]
+[gd_scene load_steps=103 format=3 uid="uid://cj2vtrsge4mif"]
 
 [ext_resource type="Shader" path="res://scenes/shaders/color_changers/change_color.gdshader" id="1_ey6cb"]
-[ext_resource type="Texture2D" uid="uid://cejkx4cdqqtk6" path="res://sprites/flower/flower_petal_pull_animation1.png" id="2_014vj"]
-[ext_resource type="Texture2D" uid="uid://15vppuvf5i1b" path="res://sprites/flower/flower_petal_pull_animation2.png" id="3_i758f"]
-[ext_resource type="Texture2D" uid="uid://dcbhjbvbdjdo" path="res://sprites/flower/flower_petal_pull_animation3.png" id="4_dhilh"]
-[ext_resource type="Texture2D" uid="uid://ci8cm0kcquti3" path="res://sprites/flower/flower_petal_pull_animation4.png" id="5_0fgpg"]
-[ext_resource type="Texture2D" uid="uid://cpulxm5di7dku" path="res://sprites/flower/flower_petal_pull_animation5.png" id="6_5b51m"]
-[ext_resource type="Texture2D" uid="uid://dix20fy33lwx1" path="res://sprites/flower/flower_petal_pull_animation6.png" id="7_mjkhb"]
-[ext_resource type="Texture2D" uid="uid://cpyf853ujy812" path="res://sprites/flower/flower_petal_pull_animation7.png" id="8_afdlk"]
-[ext_resource type="Texture2D" uid="uid://brdx74spwrnqq" path="res://sprites/flower/flower_petal_pull_animation8.png" id="9_8wk0w"]
-[ext_resource type="Texture2D" uid="uid://o4h23opf1an3" path="res://sprites/flower/flower_petal_pull_animation9.png" id="10_ry2yw"]
-[ext_resource type="Texture2D" uid="uid://bsvfvbdyy5uni" path="res://sprites/flower/flower_petal_pull_animation10.png" id="11_qj67x"]
-[ext_resource type="Texture2D" uid="uid://ddiwrie4a4x3i" path="res://sprites/flower/flower_petal_pull_animation11.png" id="12_d323a"]
-[ext_resource type="Texture2D" uid="uid://cwnnehjh5no6s" path="res://sprites/flower/flower_petal_pull_animation12.png" id="13_tfabm"]
-[ext_resource type="Texture2D" uid="uid://bqxpm5nod5pne" path="res://sprites/flower/flower_petal_pull_animation13.png" id="14_0oshq"]
-[ext_resource type="Texture2D" uid="uid://d03686xexqmpi" path="res://sprites/flower/flower_petal_pull_animation14.png" id="15_3akvt"]
+[ext_resource type="Texture2D" uid="uid://bkr25d5tw4wip" path="res://sprites/flower/flower_petal_pull_animation1.png" id="2_014vj"]
+[ext_resource type="Texture2D" uid="uid://hxhdxpwsj40" path="res://sprites/flower/flower_petal_pull_animation2.png" id="3_i758f"]
+[ext_resource type="Texture2D" uid="uid://bkgu5hqnxr5wy" path="res://sprites/flower/flower_petal_pull_animation3.png" id="4_dhilh"]
+[ext_resource type="Texture2D" uid="uid://crn4mctywxxdk" path="res://sprites/flower/flower_petal_pull_animation4.png" id="5_0fgpg"]
+[ext_resource type="Texture2D" uid="uid://dyo7xg2uvu3mf" path="res://sprites/flower/flower_petal_pull_animation5.png" id="6_5b51m"]
+[ext_resource type="Texture2D" uid="uid://dgppsneqy8pix" path="res://sprites/flower/flower_petal_pull_animation6.png" id="7_mjkhb"]
+[ext_resource type="Texture2D" uid="uid://dhe50gnuvjkeg" path="res://sprites/flower/flower_petal_pull_animation7.png" id="8_afdlk"]
+[ext_resource type="Texture2D" uid="uid://bom5giadyp5bx" path="res://sprites/flower/flower_petal_pull_animation8.png" id="9_8wk0w"]
+[ext_resource type="Texture2D" uid="uid://bm6rf1sbg6o6t" path="res://sprites/flower/flower_petal_pull_animation9.png" id="10_ry2yw"]
+[ext_resource type="Texture2D" uid="uid://d1dm4irtqubs3" path="res://sprites/flower/flower_petal_pull_animation10.png" id="11_qj67x"]
+[ext_resource type="Texture2D" uid="uid://b1lf47b0ob4rx" path="res://sprites/flower/flower_petal_pull_animation11.png" id="12_d323a"]
+[ext_resource type="Texture2D" uid="uid://cr3byr2rvg5fo" path="res://sprites/flower/flower_petal_pull_animation12.png" id="13_tfabm"]
+[ext_resource type="Texture2D" uid="uid://dphj785kdgsqj" path="res://sprites/flower/flower_petal_pull_animation13.png" id="14_0oshq"]
+[ext_resource type="Texture2D" uid="uid://bm2mv65qnt5rj" path="res://sprites/flower/flower_petal_pull_animation14.png" id="15_3akvt"]
 [ext_resource type="Script" path="res://scenes/scripts/petal_1.gd" id="16_tveq4"]
+[ext_resource type="Texture2D" uid="uid://bitlig73akgan" path="res://sprites/flower/flower_petal_pull_animation15.png" id="16_ug7a3"]
 [ext_resource type="Shader" path="res://scenes/shaders/background.gdshader" id="17_etknk"]
+[ext_resource type="Texture2D" uid="uid://cesxaqqaa0w4o" path="res://sprites/flower/flower_petal_pull_animation16.png" id="17_y8e1g"]
+[ext_resource type="Texture2D" uid="uid://c7baw0tewc3jg" path="res://sprites/flower/flower_petal_pull_animation17.png" id="18_8fnxn"]
 [ext_resource type="Texture2D" uid="uid://c4o0gfjg5va1r" path="res://sprites/flower/flower_pistils.png" id="18_7668m"]
+[ext_resource type="Texture2D" uid="uid://dfn3aqle80tdw" path="res://sprites/flower/flower_petal_pull_animation18.png" id="19_2oixq"]
+[ext_resource type="Texture2D" uid="uid://dsmo7v241au2q" path="res://sprites/flower/flower_petal_pull_animation19.png" id="20_jm6fg"]
+[ext_resource type="Texture2D" uid="uid://cuoyj6ms3xj4r" path="res://sprites/flower/flower_petal_pull_animation20.png" id="21_cs0v6"]
+[ext_resource type="Texture2D" uid="uid://bckolumypiqx2" path="res://sprites/flower/flower_petal_pull_animation21.png" id="22_8lwgn"]
+[ext_resource type="Texture2D" uid="uid://cmlcakg4ossdx" path="res://sprites/flower/flower_petal_pull_animation22.png" id="23_1vbhc"]
+[ext_resource type="Texture2D" uid="uid://bsdyf6bkitsmy" path="res://sprites/flower/flower_petal_pull_animation23.png" id="24_v2trk"]
+[ext_resource type="Texture2D" uid="uid://csmyqra5oyur3" path="res://sprites/flower/flower_petal_pull_animation24.png" id="25_idss0"]
+[ext_resource type="Texture2D" uid="uid://cbn4lm5awilf7" path="res://sprites/flower/flower_petal_pull_animation25.png" id="26_dkpdh"]
+[ext_resource type="Texture2D" uid="uid://cptd36k7531xc" path="res://sprites/flower/flower_petal_pull_animation26.png" id="27_sccie"]
+[ext_resource type="Texture2D" uid="uid://c2q2smunq2q8v" path="res://sprites/flower/flower_petal_pull_animation27.png" id="28_hjxfw"]
+[ext_resource type="Texture2D" uid="uid://cc1oj10l2rn46" path="res://sprites/flower/flower_petal_pull_animation28.png" id="29_ivvc0"]
+[ext_resource type="Texture2D" uid="uid://cxycg0py4qv88" path="res://sprites/flower/flower_petal_pull_animation29.png" id="30_sly3a"]
+[ext_resource type="Texture2D" uid="uid://ma3ia04fcbp0" path="res://sprites/flower/flower_petal_pull_animation30.png" id="31_gbnqi"]
+[ext_resource type="Texture2D" uid="uid://bt0hcvsqhqu0o" path="res://sprites/flower/flower_petal_pull_animation31.png" id="32_hr1h1"]
+[ext_resource type="Texture2D" uid="uid://iiuhuixo608u" path="res://sprites/flower/flower_petal_pull_animation32.png" id="33_s6iki"]
+[ext_resource type="Texture2D" uid="uid://cs01x0exye4x" path="res://sprites/flower/flower_petal_pull_animation33.png" id="34_3eh2h"]
+[ext_resource type="Texture2D" uid="uid://viprc6skgjyu" path="res://sprites/flower/flower_petal_pull_animation34.png" id="35_3n8bo"]
+[ext_resource type="Texture2D" uid="uid://didfc8a81m5cr" path="res://sprites/flower/flower_petal_pull_animation35.png" id="36_6y3j8"]
+[ext_resource type="Texture2D" uid="uid://3ekvu4a5ml1" path="res://sprites/flower/flower_petal_pull_animation36.png" id="37_ylkdp"]
+[ext_resource type="Texture2D" uid="uid://bxj5a1j1y3ndq" path="res://sprites/flower/flower_petal_pull_animation37.png" id="38_gdd8s"]
+[ext_resource type="Texture2D" uid="uid://bd35nmbtft346" path="res://sprites/flower/flower_petal_pull_animation38.png" id="39_xajqc"]
+[ext_resource type="Texture2D" uid="uid://bm1x5calkac5x" path="res://sprites/flower/flower_petal_pull_animation39.png" id="40_7xd8o"]
+[ext_resource type="Texture2D" uid="uid://dcccbgal26lv4" path="res://sprites/flower/flower_petal_pull_animation40.png" id="41_8ohg6"]
+[ext_resource type="Texture2D" uid="uid://37g8aoj1rvf8" path="res://sprites/flower/flower_petal_pull_animation41.png" id="42_57rsj"]
+[ext_resource type="Texture2D" uid="uid://mtgtlefiv5at" path="res://sprites/flower/flower_petal_pull_animation42.png" id="43_aarle"]
+[ext_resource type="Texture2D" uid="uid://dgurhmuu3xty" path="res://sprites/flower/flower_petal_pull_animation43.png" id="44_gaf3x"]
+[ext_resource type="Texture2D" uid="uid://e7k3qn3di3qg" path="res://sprites/flower/flower_petal_pull_animation44.png" id="45_1ln18"]
+[ext_resource type="Texture2D" uid="uid://dkregiggnhkqe" path="res://sprites/flower/flower_petal_pull_animation45.png" id="46_tkf0j"]
+[ext_resource type="Texture2D" uid="uid://dk75tw30iddo2" path="res://sprites/flower/flower_petal_pull_animation46.png" id="47_vaake"]
+[ext_resource type="Texture2D" uid="uid://cvwc4wgfo6auk" path="res://sprites/flower/flower_petal_pull_animation47.png" id="48_wa568"]
+[ext_resource type="Texture2D" uid="uid://dpnb8stoo85v7" path="res://sprites/flower/flower_petal_pull_animation48.png" id="49_ecdl7"]
+[ext_resource type="Texture2D" uid="uid://c7n36n7snrcpy" path="res://sprites/flower/flower_petal_pull_animation49.png" id="50_41iyo"]
+[ext_resource type="Texture2D" uid="uid://b87c7e34faq8q" path="res://sprites/flower/flower_petal_pull_animation50.png" id="51_6i7qt"]
 
 [sub_resource type="Gradient" id="Gradient_1edga"]
 colors = PackedColorArray(0, 0, 0, 1, 1, 0.23, 0.23, 1)
@@ -77,10 +113,118 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("15_3akvt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_ug7a3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_y8e1g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_8fnxn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_2oixq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_jm6fg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_cs0v6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_8lwgn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_1vbhc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_v2trk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_idss0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_dkpdh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_sccie")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_hjxfw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_ivvc0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_sly3a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_gbnqi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_hr1h1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_s6iki")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_3eh2h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_3n8bo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_6y3j8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_ylkdp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_gdd8s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_xajqc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_7xd8o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_8ohg6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_57rsj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_aarle")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_gaf3x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_1ln18")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_tkf0j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_vaake")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_wa568")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_ecdl7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_41iyo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_6i7qt")
 }],
 "loop": false,
 "name": &"petal_pull",
-"speed": 20.0
+"speed": 60.0
 }]
 
 [sub_resource type="Gradient" id="Gradient_mmgrm"]

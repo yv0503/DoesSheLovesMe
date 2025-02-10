@@ -9,7 +9,7 @@
 [ext_resource type="Script" path="res://scenes/scripts/jokes.gd" id="7_ka0fp"]
 [ext_resource type="FontFile" uid="uid://2gm83ci1c064" path="res://sprites/fonts/pixelFont-7-8x14-sproutLands.ttf" id="8_7nsmc"]
 [ext_resource type="Texture2D" uid="uid://bcb1308m705nx" path="res://sprites/UI/UI Big Play Button.png" id="9_ydmxj"]
-[ext_resource type="Script" path="res://scenes/scripts/start.gd" id="10_aktd1"]
+[ext_resource type="Script" path="res://scenes/scripts/retry.gd" id="10_16wkh"]
 
 [sub_resource type="Animation" id="Animation_oikoa"]
 length = 0.001
@@ -155,7 +155,7 @@ theme_override_styles/normal = SubResource("StyleBoxTexture_ajfvx")
 action_mode = 0
 text = "Try Again
 "
-script = ExtResource("10_aktd1")
+script = ExtResource("10_16wkh")
 
 [connection signal="ready" from="loser_menu/Label/Jokes" to="loser_menu/Label/Jokes" method="_on_ready"]
 [connection signal="pressed" from="loser_menu/Label/Start" to="loser_menu/Label/Start" method="_on_pressed"]
